@@ -1,0 +1,1153 @@
+/* ===================================
+   Global Styles
+   =================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333333;
+    background-color: #f5f5f5;
+}
+
+/* ===================================
+   Container
+   =================================== */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ===================================
+   Header Section with 3-Color Gradient
+   =================================== */
+.site-header {
+    background: linear-gradient(135deg, #0066cc 0%, #0055aa 50%, #004499 100%);
+    color: #ffffff;
+    padding: 80px 20px 60px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.site-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: -1px;
+}
+
+.header-link {
+    color: #ffffff;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.header-link:hover {
+    opacity: 0.85;
+}
+
+.site-tagline {
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin-bottom: 35px;
+    opacity: 0.95;
+    letter-spacing: 0.5px;
+}
+
+/* ===================================
+   Navigation Buttons
+   =================================== */
+.site-nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.nav-button {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    text-decoration: none;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+}
+
+.nav-button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.8);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nav-button.active {
+    background-color: rgba(255, 255, 255, 0.4);
+    border-color: rgba(255, 255, 255, 0.9);
+    font-weight: 600;
+}
+
+/* ===================================
+   Main Content
+   =================================== */
+.main-content {
+    padding: 60px 0;
+}
+
+/* Content Wrapper - Two Column Layout */
+.content-wrapper {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.main-area {
+    flex: 1;
+    min-width: 0;
+}
+
+/* Renewal Notice */
+.renewal-notice {
+    background: linear-gradient(135deg, #0066cc 0%, #004499 100%);
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 25px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 102, 204, 0.3);
+}
+
+.renewal-title {
+    margin: 0 0 15px 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.renewal-description {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.8;
+    opacity: 0.95;
+}
+
+.content-section {
+    margin-bottom: 40px;
+}
+
+/* ===================================
+   Card Styles
+   =================================== */
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 40px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.section-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #0066cc;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #0066cc;
+    letter-spacing: -0.5px;
+}
+
+.section-content h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #004499;
+    margin-top: 25px;
+    margin-bottom: 12px;
+}
+
+.section-content p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+    color: #555555;
+}
+
+.section-content ul {
+    margin: 15px 0 20px 25px;
+    line-height: 1.9;
+}
+
+.section-content li {
+    margin-bottom: 8px;
+    color: #555555;
+}
+
+/* Coming Soon Message */
+.coming-soon {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #0066cc;
+    padding: 40px 20px;
+    background-color: #f0f7ff;
+    border-radius: 6px;
+    border: 2px dashed #0066cc;
+}
+
+/* ===================================
+   Organization Info (About Page)
+   =================================== */
+.organization-info {
+    margin-top: 20px;
+}
+
+.info-row {
+    display: flex;
+    padding: 20px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.info-row:first-child {
+    padding-top: 0;
+}
+
+.info-row:last-child {
+    border-bottom: none;
+}
+
+.info-label {
+    width: 180px;
+    flex-shrink: 0;
+    font-weight: 700;
+    color: #0066cc;
+    font-size: 1rem;
+}
+
+.info-value {
+    flex: 1;
+    color: #555555;
+    line-height: 1.8;
+}
+
+.business-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.business-list li {
+    margin-bottom: 15px;
+    padding-left: 0;
+    color: #333333;
+    font-weight: 600;
+}
+
+.business-list li:last-child {
+    margin-bottom: 0;
+}
+
+.business-detail {
+    display: block;
+    margin-top: 5px;
+    color: #555555;
+    font-weight: 400;
+    font-size: 0.95rem;
+    padding-left: 15px;
+}
+
+.contact-link {
+    display: inline-block;
+    margin-top: 8px;
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid transparent;
+}
+
+.contact-link:hover {
+    color: #004499;
+    border-bottom-color: #004499;
+    transform: translateX(3px);
+}
+
+/* ===================================
+   Timeline (History Section)
+   =================================== */
+.timeline {
+    position: relative;
+    padding: 20px 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 120px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, #0066cc 0%, #004499 100%);
+}
+
+.timeline-item {
+    display: flex;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-date {
+    width: 100px;
+    flex-shrink: 0;
+    font-weight: 700;
+    color: #0066cc;
+    font-size: 1.1rem;
+    padding-right: 20px;
+    text-align: right;
+    font-family: 'Courier New', monospace;
+}
+
+.timeline-content {
+    flex: 1;
+    position: relative;
+    padding-left: 40px;
+    padding-top: 2px;
+}
+
+.timeline-marker {
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 14px;
+    height: 14px;
+    background-color: #0066cc;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px #0066cc;
+    z-index: 1;
+}
+
+.timeline-text {
+    color: #555555;
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+/* ===================================
+   Tab Navigation (CSS Only - No JavaScript)
+   =================================== */
+.tab-container {
+    margin-top: 20px;
+}
+
+/* Hide radio buttons */
+.tab-input {
+    display: none;
+}
+
+/* Tab Labels */
+.tab-labels {
+    display: flex;
+    gap: 10px;
+    border-bottom: 2px solid #e0e0e0;
+    margin-bottom: 25px;
+}
+
+.tab-label {
+    padding: 12px 24px;
+    cursor: pointer;
+    font-weight: 500;
+    color: #666666;
+    background-color: #f5f5f5;
+    border: 1px solid #e0e0e0;
+    border-bottom: none;
+    border-radius: 6px 6px 0 0;
+    transition: all 0.3s ease;
+    position: relative;
+    bottom: -2px;
+}
+
+.tab-label:hover {
+    background-color: #e8f2ff;
+    color: #0066cc;
+}
+
+/* Active Tab Style */
+#tab-all:checked ~ .tab-labels label[for="tab-all"],
+#tab-press:checked ~ .tab-labels label[for="tab-press"],
+#tab-maintenance:checked ~ .tab-labels label[for="tab-maintenance"] {
+    background-color: #ffffff;
+    color: #0066cc;
+    border-color: #0066cc;
+    border-bottom: 2px solid #ffffff;
+    font-weight: 600;
+    box-shadow: 0 -2px 4px rgba(0, 102, 204, 0.1);
+}
+
+/* Tab Content */
+.tab-content {
+    display: none;
+}
+
+#tab-all:checked ~ #content-all,
+#tab-press:checked ~ #content-press,
+#tab-maintenance:checked ~ #content-maintenance {
+    display: block;
+}
+
+.tab-pane {
+    animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===================================
+   News Item Styles (Architect Theme)
+   =================================== */
+.news-item {
+    padding: 25px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border-left: 4px solid #0066cc;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.news-item:hover {
+    box-shadow: 0 2px 8px rgba(0, 102, 204, 0.15);
+    transform: translateX(5px);
+}
+
+.news-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.news-date {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #666666;
+    font-family: 'Courier New', monospace;
+}
+
+.news-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.news-badge-press {
+    background-color: #0066cc;
+    color: #ffffff;
+}
+
+.news-badge-maintenance {
+    background-color: #ff9800;
+    color: #ffffff;
+}
+
+.news-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #0066cc;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.news-content {
+    color: #555555;
+    line-height: 1.8;
+}
+
+.news-content p {
+    margin-bottom: 12px;
+}
+
+.news-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* ===================================
+   Right Sidebar
+   =================================== */
+.sidebar {
+    width: 300px;
+    flex-shrink: 0;
+}
+
+.sidebar-section {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.sidebar-section:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.sidebar-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #0066cc;
+    margin: 0 0 15px 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #0066cc;
+}
+
+.sidebar-content {
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.coming-soon-small {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #0066cc;
+    padding: 20px 10px;
+    background-color: #f0f7ff;
+    border-radius: 4px;
+    border: 1px dashed #0066cc;
+    margin: 0;
+}
+
+/* Sidebar Link List */
+.sidebar-link-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-link-list li {
+    margin-bottom: 12px;
+}
+
+.sidebar-link-list li:last-child {
+    margin-bottom: 0;
+}
+
+.sidebar-link {
+    display: block;
+    padding: 10px 15px;
+    color: #333333;
+    text-decoration: none;
+    background-color: #f9f9f9;
+    border-left: 3px solid #e0e0e0;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.sidebar-link:hover {
+    background-color: #e8f2ff;
+    border-left-color: #0066cc;
+    color: #0066cc;
+    transform: translateX(5px);
+}
+
+.sidebar-link.active {
+    background-color: #0066cc;
+    border-left-color: #004499;
+    color: #ffffff;
+}
+
+.sidebar-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-links li {
+    margin-bottom: 12px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.sidebar-links li:before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: #0066cc;
+    font-weight: bold;
+}
+
+.sidebar-links a {
+    color: #333333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    display: inline-block;
+}
+
+.sidebar-links a:hover {
+    color: #0066cc;
+    padding-left: 5px;
+}
+
+/* ===================================
+   Contact Information
+   =================================== */
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.contact-item {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    border-left: 4px solid #0066cc;
+}
+
+.contact-item h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #0066cc;
+    margin-bottom: 10px;
+}
+
+.contact-item p {
+    margin-bottom: 0;
+    color: #555555;
+}
+
+.contact-item a {
+    color: #0066cc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+    color: #004499;
+    text-decoration: underline;
+}
+
+/* ===================================
+   Footer
+   =================================== */
+.site-footer {
+    background-color: #333333;
+    color: #cccccc;
+    padding: 30px 0;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.site-footer p {
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+/* ===================================
+   Breadcrumb Navigation
+   =================================== */
+.breadcrumb {
+    padding: 15px 0;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+.breadcrumb-link {
+    color: #0066cc;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.breadcrumb-link:hover {
+    color: #004499;
+    text-decoration: underline;
+}
+
+.breadcrumb-separator {
+    margin: 0 10px;
+    color: #999999;
+}
+
+.breadcrumb-current {
+    color: #666666;
+    font-weight: 600;
+}
+
+/* ===================================
+   Back to Top Button
+   =================================== */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #0066cc 0%, #004499 100%);
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 102, 204, 0.4);
+    transition: all 0.3s ease;
+    z-index: 1000;
+    opacity: 0.9;
+}
+
+.back-to-top:hover {
+    opacity: 1;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 102, 204, 0.6);
+}
+
+.back-to-top-icon {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1;
+}
+
+/* ===================================
+   Responsive Design
+   =================================== */
+@media (max-width: 1024px) {
+    .sidebar {
+        width: 250px;
+    }
+    
+    .sidebar-section {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .site-title {
+        font-size: 2.5rem;
+    }
+    
+    .site-tagline {
+        font-size: 1.1rem;
+    }
+    
+    .site-header {
+        padding: 60px 20px 40px;
+    }
+    
+    .card {
+        padding: 30px 20px;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .section-content h3 {
+        font-size: 1.3rem;
+    }
+    
+    .main-content {
+        padding: 40px 0;
+    }
+    
+    .content-wrapper {
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        width: 100%;
+        order: 2;
+    }
+    
+    .main-area {
+        order: 1;
+    }
+    
+    .contact-info {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .renewal-notice {
+        padding: 25px 20px;
+    }
+    
+    .renewal-title {
+        font-size: 1.3rem;
+    }
+    
+    .renewal-description {
+        font-size: 0.95rem;
+    }
+    
+    /* Tab Responsive */
+    .tab-labels {
+        gap: 5px;
+    }
+    
+    .tab-label {
+        padding: 10px 16px;
+        font-size: 0.9rem;
+    }
+    
+    /* News Item Responsive */
+    .news-item {
+        padding: 20px 15px;
+    }
+    
+    .news-title {
+        font-size: 1.2rem;
+    }
+    
+    /* Organization Info Responsive */
+    .info-row {
+        flex-direction: column;
+        padding: 15px 0;
+    }
+    
+    .info-label {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+    
+    /* Timeline Responsive */
+    .timeline::before {
+        left: 80px;
+    }
+    
+    .timeline-date {
+        width: 70px;
+        font-size: 0.95rem;
+        padding-right: 10px;
+    }
+    
+    .timeline-content {
+        padding-left: 30px;
+    }
+    
+    /* Breadcrumb Responsive */
+    .breadcrumb {
+        font-size: 0.85rem;
+        padding: 12px 0;
+    }
+    
+    .breadcrumb-separator {
+        margin: 0 8px;
+    }
+    
+    /* Back to Top Button Responsive */
+    .back-to-top {
+        width: 45px;
+        height: 45px;
+        bottom: 20px;
+        right: 20px;
+    }
+    
+    .back-to-top-icon {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .site-title {
+        font-size: 2rem;
+    }
+    
+    .site-tagline {
+        font-size: 1rem;
+        margin-bottom: 25px;
+    }
+    
+    .nav-button {
+        padding: 10px 20px;
+        font-size: 0.95rem;
+    }
+    
+    .card {
+        padding: 25px 15px;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .renewal-notice {
+        padding: 20px 15px;
+    }
+    
+    .renewal-title {
+        font-size: 1.1rem;
+        margin-bottom: 12px;
+    }
+    
+    .renewal-description {
+        font-size: 0.9rem;
+    }
+    
+    /* Tab Mobile Optimization */
+    .tab-labels {
+        flex-direction: column;
+        gap: 8px;
+        border-bottom: none;
+    }
+    
+    .tab-label {
+        padding: 12px 20px;
+        font-size: 0.95rem;
+        border-radius: 6px;
+        border: 1px solid #e0e0e0;
+        bottom: 0;
+    }
+    
+    #tab-all:checked ~ .tab-labels label[for="tab-all"],
+    #tab-press:checked ~ .tab-labels label[for="tab-press"],
+    #tab-maintenance:checked ~ .tab-labels label[for="tab-maintenance"] {
+        border: 2px solid #0066cc;
+    }
+    
+    /* News Item Mobile */
+    .news-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    
+    .news-title {
+        font-size: 1.1rem;
+    }
+    
+    /* Timeline Mobile */
+    .timeline::before {
+        left: 60px;
+    }
+    
+    .timeline-date {
+        width: 55px;
+        font-size: 0.85rem;
+        padding-right: 5px;
+    }
+    
+    .timeline-content {
+        padding-left: 25px;
+    }
+    
+    .timeline-text {
+        font-size: 0.95rem;
+    }
+    
+    .timeline-marker {
+        width: 12px;
+        height: 12px;
+        border-width: 2px;
+    }
+    
+    /* Breadcrumb Mobile */
+    .breadcrumb {
+        font-size: 0.8rem;
+        padding: 10px 0;
+    }
+    
+    .breadcrumb-separator {
+        margin: 0 6px;
+    }
+    
+    /* Back to Top Button Mobile */
+    .back-to-top {
+        width: 40px;
+        height: 40px;
+        bottom: 15px;
+        right: 15px;
+    }
+    
+    .back-to-top-icon {
+        font-size: 1.2rem;
+    }
+}
+
+/* ===================================
+   Contact Form Specific Styles
+   =================================== */
+.form-notice {
+    background-color: #fff3cd;
+    border-left: 4px solid #ff9800;
+    padding: 15px 20px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+
+.form-notice p {
+    margin: 0;
+    color: #856404;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.form-notice strong {
+    display: block;
+    margin-bottom: 5px;
+    color: #ff9800;
+    font-weight: 600;
+}
+
+.form-description {
+    margin-bottom: 30px;
+    color: #555555;
+    line-height: 1.8;
+}
+
+.btn-submit {
+    background: linear-gradient(135deg, #0066cc 0%, #004499 100%);
+    color: #ffffff;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 102, 204, 0.3);
+}
+
+.btn-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 102, 204, 0.5);
+}
+
+.btn-submit:disabled {
+    background: linear-gradient(135deg, #cccccc 0%, #999999 100%);
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+.privacy-link {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.privacy-link:hover {
+    color: #004499;
+    text-decoration: underline;
+}
+
+/* ===================================
+   Utility Classes
+   =================================== */
+.info-note {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.text-link {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.text-link:hover {
+    color: #004499;
+    text-decoration: underline;
+}
+
+.last-updated {
+    text-align: right;
+    color: #666;
+    font-size: 0.9rem;
+    padding: 20px 0 0 0;
+}
+
+.last-updated p {
+    margin: 0;
+}
+
+/* ===================================
+   Legal Page - Table of Contents (Sticky)
+   =================================== */
+.legal-toc-card {
+    position: sticky;
+    top: 20px;
+    z-index: 100;
+    background-color: #f0f7ff;
+    border-left: 4px solid #0066cc;
+    box-shadow: 0 4px 12px rgba(0, 102, 204, 0.15);
+}
+
+.legal-toc {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 10px 0;
+}
+
+.legal-toc-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #0066cc;
+    text-decoration: none;
+    border: 2px solid #0066cc;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.legal-toc-link:hover {
+    background-color: #0066cc;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 102, 204, 0.3);
+}
+
+/* Responsive - Mobile */
+@media (max-width: 768px) {
+    .legal-toc-card {
+        position: relative;
+        top: 0;
+    }
+    
+    .legal-toc {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .legal-toc-link {
+        text-align: center;
+        width: 100%;
+    }
+}

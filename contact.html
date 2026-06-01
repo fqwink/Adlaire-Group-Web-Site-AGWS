@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Adlaire Group - お問い合わせ">
+    <title>お問い合わせ | Adlaire Group</title>
+    <link rel="stylesheet" href="architect.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+    <!-- ============================================================================
+         ヘッダーエリア (Header Area)
+         ============================================================================ -->
+    <header class="site-header">
+        <div class="container">
+            <h1 class="site-title"><a href="index.html" class="header-link">Adlaire Group</a></h1>
+            <nav class="site-nav">
+                <a href="about.html" class="nav-button">組織概要</a>
+                <a href="contact.html" class="nav-button active">お問い合わせ</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ============================================================================
+         メインコンテンツエリア (Main Content Area)
+         ============================================================================ -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Breadcrumb Navigation -->
+            <nav class="breadcrumb">
+                <a href="index.html" class="breadcrumb-link">ホーム</a>
+                <span class="breadcrumb-separator">›</span>
+                <span class="breadcrumb-current">お問い合わせ</span>
+            </nav>
+
+            <div class="content-wrapper">
+                <!-- ========================================
+                     コンテンツエリア (Content Area)
+                     ======================================== -->
+                <div class="main-area">
+                    <!-- Contact Form Section -->
+                    <section class="content-section">
+                        <div class="card">
+                            <h2 class="section-title">お問い合わせ</h2>
+                            <div class="section-content">
+                                <p class="form-description">
+                                    Adlaire Groupへのお問い合わせは、下記のフォームよりお願いいたします。<br>
+                                    お問い合わせ内容を確認後、担当者より折り返しご連絡させていただきます。<br>
+                                    <strong>※</strong> は必須項目です。
+                                </p>
+
+                                <!-- Form Notice -->
+                                <div class="form-notice">
+                                    <strong>※ お知らせ</strong>
+                                    <p>現在、フォームのバックエンド機能は開発中です。<br>
+                                    送信ボタンは表示のみで、実際の送信は行われません。</p>
+                                </div>
+
+                                <!-- Contact Form -->
+                                <form id="contactForm" class="contact-form">
+                                    <div class="form-group">
+                                        <label for="name" class="form-label required">お名前</label>
+                                        <input type="text" id="name" name="name" class="form-control" required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="email" class="form-label required">メールアドレス</label>
+                                        <input type="email" id="email" name="email" class="form-control" required>
+                                        <small class="text-muted">確認のため、正確なメールアドレスをご入力ください。</small>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="company" class="form-label">会社名・組織名</label>
+                                        <input type="text" id="company" name="company" class="form-control">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="inquiry_type" class="form-label required">お問い合わせ種別</label>
+                                        <select id="inquiry_type" name="inquiry_type" class="form-control" required>
+                                            <option value="">選択してください</option>
+                                            <option value="business">事業に関するお問い合わせ</option>
+                                            <option value="recruitment">採用に関するお問い合わせ</option>
+                                            <option value="partnership">提携・協業に関するお問い合わせ</option>
+                                            <option value="media">取材・メディア関連</option>
+                                            <option value="other">その他</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="subject" class="form-label required">件名</label>
+                                        <input type="text" id="subject" name="subject" class="form-control" required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="message" class="form-label required">お問い合わせ内容</label>
+                                        <textarea id="message" name="message" class="form-control" rows="6" required></textarea>
+                                        <small class="text-muted">できるだけ具体的にご記入いただけますと幸いです。</small>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="form-check">
+                                            <input type="checkbox" id="privacy" name="privacy" class="form-check-input" required>
+                                            <label for="privacy" class="form-check-label">
+                                                <a href="legal.html" class="privacy-link" target="_blank">プライバシーポリシー</a>に同意する
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group mt-30">
+                                        <button type="submit" class="btn btn-submit btn-block" disabled>送信する</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- End: コンテンツエリア -->
+
+                <!-- ========================================
+                     サイドバーエリア (Sidebar Area)
+                     ======================================== -->
+                <aside class="sidebar">
+                    <div class="sidebar-section">
+                        <h3 class="sidebar-title">関連情報</h3>
+                        <div class="sidebar-content">
+                            <ul class="sidebar-link-list">
+                                <li><a href="about.html" class="sidebar-link">組織概要</a></li>
+                                <li><a href="legal.html" class="sidebar-link">法的情報</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
+                <!-- End: サイドバーエリア -->
+            </div>
+        </div>
+    </main>
+    <!-- End: メインコンテンツエリア -->
+
+    <!-- ============================================================================
+         ページトップへ戻るボタン (Back to Top Button)
+         ============================================================================ -->
+    <a href="#top" class="back-to-top" aria-label="ページトップへ戻る">
+        <span class="back-to-top-icon">↑</span>
+    </a>
+
+    <!-- ============================================================================
+         フッターエリア (Footer Area)
+         ============================================================================ -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2025 Adlaire Group. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- End: フッターエリア -->
+
+</body>
+</html>
