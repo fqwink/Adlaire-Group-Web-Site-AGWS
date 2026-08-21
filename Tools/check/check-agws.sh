@@ -74,18 +74,18 @@ if ! grep -F 'Adlaire-Design CSS' "$AGWS_ROOT/README.md" >/dev/null 2>&1; then
   exit 1
 fi
 
-if ! grep -F 'Adlaire-Design採用方針' "$AGWS_ROOT/README.md" >/dev/null 2>&1; then
-  echo "AGWS README must document the Adlaire-Design adoption policy." >&2
+if ! grep -F 'Adlaire-Design全面採用方針' "$AGWS_ROOT/README.md" >/dev/null 2>&1; then
+  echo "AGWS README must document the Adlaire-Design full adoption policy." >&2
   exit 1
 fi
 
-if ! grep -F '正式移行計画' "$AGWS_ROOT/README.md" >/dev/null 2>&1; then
-  echo "AGWS README must document the formal migration plan." >&2
+if ! grep -F '全面採用の確定事項' "$AGWS_ROOT/README.md" >/dev/null 2>&1; then
+  echo "AGWS README must document the full adoption decisions." >&2
   exit 1
 fi
 
-if ! grep -F 'Adlaire-Design CSS正式移行' "$AGWS_ROOT/AGENTS.md" >/dev/null 2>&1; then
-  echo "AGWS AGENTS.md must document the Adlaire-Design CSS formal migration policy." >&2
+if ! grep -F 'Adlaire-Design CSSは全面採用済み' "$AGWS_ROOT/AGENTS.md" >/dev/null 2>&1; then
+  echo "AGWS AGENTS.md must document the Adlaire-Design CSS full adoption policy." >&2
   exit 1
 fi
 
@@ -166,13 +166,13 @@ if [ -n "$ADLAIRE_DESIGN_ROOT" ] && [ -d "$ADLAIRE_DESIGN_ROOT" ]; then
   done
 fi
 
-if ! grep -F 'linear-gradient(135deg, #0066cc 0%, #0055aa 50%, #004499 100%)' "$AGWS_ROOT/style.css" >/dev/null 2>&1; then
-  echo "AGWS style.css must keep the header 3-color blue gradient." >&2
+if ! grep -F '`architect.css` と `style.css` は直接読み込まず、ロールバック用の既存CSSとして維持する。' "$AGWS_ROOT/README.md" >/dev/null 2>&1; then
+  echo "AGWS README must document legacy CSS as rollback-only after full adoption." >&2
   exit 1
 fi
 
-if ! grep -F '.content-wrapper' "$AGWS_ROOT/style.css" >/dev/null 2>&1; then
-  echo "AGWS style.css must define the content wrapper layout." >&2
+if ! grep -F '`architect.css` と `style.css` は、当面はロールバック用の既存CSSとして維持し、削除しないこと。' "$AGWS_ROOT/AGENTS.md" >/dev/null 2>&1; then
+  echo "AGWS AGENTS.md must keep the legacy CSS rollback policy." >&2
   exit 1
 fi
 

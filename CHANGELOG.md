@@ -6,8 +6,34 @@ Adlaire Group 組織サイトの全バージョンの変更履歴をまとめた
 
 ## Repository Maintenance
 
+### 2026-08-22
+
+- `index.html` のサイト更新方針、公開中の情報、リニューアル中の整備項目、情報掲載の考え方を「サイト運用と掲載情報」セクションへ統合した。
+- `about.html` の事業領域と事業領域の考え方を「事業領域」セクションへ統合し、組織概要表内の重複行を削除した。
+- `contact.html` のお問い合わせ前のご確認、よくある確認事項、入力内容の目安を「お問い合わせガイド」セクションへ統合した。
+- `about.html` から活動方針セクションを削除した。
+- `index.html` の「事業領域」セクションを、`about.html` の上位から2番目へ移動した。
+- `index.html` の「Adlaire Groupについて」セクションを、`about.html` の上位へ移動した。
+- トップページと組織概要ページの説明を、セクション移動後の構成に合わせて `README.md` へ反映した。
+
 ### 2026-08-21
 
+- `index.html` のお知らせセクションを、リニューアル告知直後の上位位置へ移動した。
+- `index.html` のプレスリリースに、Adlaire-Design CSS全面採用とサイトコンテンツ拡充のお知らせを追加した。
+- `index.html` に、サイト更新方針のコンテンツを追加した。
+- `index.html` に、公開中の情報とリニューアル中の整備項目を追加した。
+- `about.html` に、事業領域の考え方セクションを追加した。
+- `contact.html` に、お問い合わせ前の確認セクションを追加した。
+- `contact.html` に、よくある確認事項セクションを追加した。
+- `index.html` に、情報掲載の考え方セクションを追加した。
+- `about.html` に、運用姿勢セクションを追加した。
+- `contact.html` に、入力内容の目安セクションを追加した。
+- `legal.html` に、サイト運用についてセクションを追加した。
+- Adlaire-Design CSSを全面採用済みとして扱う方針へ更新した。
+- `adlaire-design/UI/components.css`、`adlaire-design/UI/content.css`、`adlaire-design/UI/forms.css` をAdlaire-Design正本に同期した。
+- `README.md` のAdlaire-Design採用方針を、正式移行計画から全面採用の確定事項へ更新した。
+- `AGENTS.md` に、Adlaire-Design CSS全面採用済み方針を明記した。
+- `Tools/check/check-agws.sh` に、全面採用方針と旧CSSロールバック維持方針の検査を追加した。
 - `AGENTS.md`、`README.md`、`Tools/check/check-agws.sh` の表現を、Adlaire-Design CSS適用候補から正式移行前提へ揃えた。
 - `Tools/check/check-agws.sh` に、AGENTSがAdlaire-Design CSS正式移行方針を記録していることの検査を追加した。
 - Docker配信確認で問題がないため、Adlaire-Design CSS採用候補から正式移行へ進める計画を `README.md` に追加した。
