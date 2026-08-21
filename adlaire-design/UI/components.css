@@ -1,0 +1,103 @@
+/* Adlaire-Design public components */
+.adlaire-card {
+  background-color: var(--adlaire-surface-card);
+  border: 1px solid var(--adlaire-surface-border);
+  border-radius: var(--adlaire-radius-lg);
+  box-shadow: var(--adlaire-shadow-card);
+  overflow: hidden;
+}
+
+.adlaire-card-header {
+  padding: 16px 20px;
+  background-color: var(--adlaire-surface-soft);
+  border-bottom: 1px solid var(--adlaire-surface-border);
+  color: var(--adlaire-surface-accent);
+}
+
+.adlaire-card-body {
+  padding: 20px;
+  color: var(--adlaire-surface-text);
+}
+
+.adlaire-section-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid var(--adlaire-surface-accent);
+  color: var(--adlaire-surface-accent);
+}
+
+.adlaire-breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+  color: var(--adlaire-surface-text-subtle);
+}
+
+.adlaire-sidebar-list {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.adlaire-notice {
+  padding: 16px 20px;
+  background-color: var(--adlaire-surface-soft);
+  border-left: 4px solid var(--adlaire-surface-accent);
+  border-radius: var(--adlaire-radius-sm);
+  color: var(--adlaire-surface-text);
+}
+
+.adlaire-notice-warning {
+  background-color: var(--adlaire-surface-notice-soft);
+  border-left-color: var(--adlaire-surface-notice);
+  color: var(--adlaire-surface-notice-text);
+}
+
+.adlaire-tabs {
+  display: grid;
+  gap: 16px;
+}
+
+.adlaire-tab-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  border-bottom: 1px solid var(--adlaire-surface-border);
+}
+
+.adlaire-tab-panel {
+  padding: 20px;
+  background-color: var(--adlaire-surface-card);
+  border: 1px solid var(--adlaire-surface-border);
+  border-radius: var(--adlaire-radius-sm);
+  color: var(--adlaire-surface-text);
+}
+
+.adlaire-timeline {
+  display: grid;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.adlaire-timeline-item {
+  padding-left: 16px;
+  border-left: 4px solid var(--adlaire-surface-accent);
+  color: var(--adlaire-surface-text-muted);
+}
+
+.adlaire-page-top {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 16px;
+  background-color: var(--adlaire-surface-accent);
+  border-radius: var(--adlaire-radius-sm);
+  color: var(--adlaire-surface-card);
+  text-decoration: none;
+}

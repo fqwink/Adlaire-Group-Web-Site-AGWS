@@ -1,0 +1,200 @@
+/* Adlaire-Design form components */
+.contact-form {
+  width: 100%;
+}
+
+.adlaire-form-group,
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.adlaire-form-label,
+.form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--adlaire-surface-text);
+  font-weight: 500;
+}
+
+.form-label.required::after {
+  color: var(--adlaire-status-danger);
+  content: " *";
+}
+
+.adlaire-form-control,
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background-color: var(--adlaire-surface-card);
+  border: 1px solid var(--adlaire-status-gray-ddd);
+  border-radius: var(--adlaire-radius-sm);
+  color: var(--adlaire-surface-text);
+  font-size: 1rem;
+  line-height: 1.5;
+  transition: border-color var(--adlaire-transition-fast), box-shadow var(--adlaire-transition-fast);
+}
+
+.adlaire-form-control:focus,
+.form-control:focus {
+  border-color: var(--adlaire-surface-accent);
+  box-shadow: var(--adlaire-shadow-focus-ring);
+  outline: 0;
+}
+
+textarea.form-control {
+  min-height: 120px;
+  resize: vertical;
+}
+
+select.form-control {
+  cursor: pointer;
+}
+
+.adlaire-form-check,
+.form-check {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.form-check-input {
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+.form-check-label {
+  cursor: pointer;
+  user-select: none;
+}
+
+.adlaire-button,
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid transparent;
+  border-radius: var(--adlaire-radius-sm);
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color var(--adlaire-transition-button), border-color var(--adlaire-transition-button), box-shadow var(--adlaire-transition-button), color var(--adlaire-transition-button), transform var(--adlaire-transition-button);
+}
+
+.adlaire-button:hover,
+.btn:hover {
+  box-shadow: var(--adlaire-shadow-button);
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.adlaire-button-primary,
+.btn-primary {
+  background-color: var(--adlaire-surface-accent);
+  border-color: var(--adlaire-surface-accent);
+  color: var(--adlaire-surface-card);
+}
+
+.adlaire-button-primary:hover,
+.btn-primary:hover {
+  background-color: var(--adlaire-surface-accent-mid);
+  border-color: var(--adlaire-surface-accent-mid);
+}
+
+.adlaire-button-secondary,
+.btn-secondary {
+  background-color: var(--adlaire-status-secondary);
+  border-color: var(--adlaire-status-secondary);
+  color: var(--adlaire-surface-card);
+}
+
+.adlaire-button-secondary:hover,
+.btn-secondary:hover {
+  background-color: var(--adlaire-status-secondary-strong);
+  border-color: var(--adlaire-status-secondary-strong);
+}
+
+.adlaire-button-outline,
+.btn-outline-primary {
+  background-color: transparent;
+  border-color: var(--adlaire-surface-accent);
+  color: var(--adlaire-surface-accent);
+}
+
+.adlaire-button-outline:hover,
+.btn-outline-primary:hover {
+  background-color: var(--adlaire-surface-accent);
+  color: var(--adlaire-surface-card);
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.btn-lg {
+  padding: 1rem 2rem;
+  font-size: 1.125rem;
+}
+
+.btn-sm {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+}
+
+.form-notice {
+  margin-bottom: 30px;
+  padding: 15px 20px;
+  background-color: var(--adlaire-surface-notice-soft);
+  border-left: 4px solid var(--adlaire-surface-notice);
+  border-radius: var(--adlaire-radius-sm);
+}
+
+.form-notice p {
+  margin: 0;
+  color: var(--adlaire-surface-notice-text);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.form-notice strong {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--adlaire-surface-notice);
+  font-weight: 600;
+}
+
+.form-description {
+  margin-bottom: 30px;
+  color: var(--adlaire-surface-text-muted);
+  line-height: 1.8;
+}
+
+.adlaire-button-submit,
+.btn-submit {
+  padding: 15px 40px;
+  background: linear-gradient(135deg, var(--adlaire-surface-accent) 0%, var(--adlaire-surface-accent-strong) 100%);
+  border: none;
+  border-radius: var(--adlaire-radius-sm);
+  box-shadow: var(--adlaire-shadow-blue);
+  color: var(--adlaire-surface-card);
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: box-shadow var(--adlaire-transition-base), transform var(--adlaire-transition-base);
+}
+
+.adlaire-button-submit:hover,
+.btn-submit:hover {
+  box-shadow: var(--adlaire-shadow-blue-hover);
+  transform: translateY(-2px);
+}
+
+.adlaire-button-disabled,
+.btn-submit:disabled {
+  background: linear-gradient(135deg, var(--adlaire-status-gray-ccc) 0%, var(--adlaire-status-gray-999) 100%);
+  box-shadow: none;
+  cursor: not-allowed;
+  transform: none;
+}

@@ -1,0 +1,17 @@
+/* Adlaire-Design surface tokens */
+:root {
+  --adlaire-surface-accent: #0066cc;
+  --adlaire-surface-accent-mid: #0055aa;
+  --adlaire-surface-accent-strong: #004499;
+  --adlaire-surface-page: #f5f5f5;
+  --adlaire-surface-card: #ffffff;
+  --adlaire-surface-soft: #f0f7ff;
+  --adlaire-surface-soft-strong: #e8f2ff;
+  --adlaire-surface-border: #e0e0e0;
+  --adlaire-surface-text: #333333;
+  --adlaire-surface-text-muted: #555555;
+  --adlaire-surface-text-subtle: #666666;
+  --adlaire-surface-notice: #ff9800;
+  --adlaire-surface-notice-soft: #fff3cd;
+  --adlaire-surface-notice-text: #856404;
+}
