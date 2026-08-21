@@ -16,6 +16,7 @@
   font-weight: 500;
 }
 
+.adlaire-form-label.required::after,
 .form-label.required::after {
   color: var(--adlaire-status-danger);
   content: " *";
@@ -42,11 +43,13 @@
   outline: 0;
 }
 
+textarea.adlaire-form-control,
 textarea.form-control {
   min-height: 120px;
   resize: vertical;
 }
 
+select.adlaire-form-control,
 select.form-control {
   cursor: pointer;
 }
@@ -192,6 +195,7 @@ select.form-control {
 }
 
 .adlaire-button-disabled,
+.adlaire-button-submit:disabled,
 .btn-submit:disabled {
   background: linear-gradient(135deg, var(--adlaire-status-gray-ccc) 0%, var(--adlaire-status-gray-999) 100%);
   box-shadow: none;

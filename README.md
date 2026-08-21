@@ -21,26 +21,29 @@ Adlaire Groupの公式ウェブサイトです。Adlaire-Designの公開面CSS�
 
 | ページ | ファイル名 | 説明 | URI |
 |--------|-----------|------|-----|
-| トップページ | `index.html` | プレスリリースとお知らせを表示 | `/` |
-| 組織概要 | `about.html` | 組織情報、事業領域、沿革 | `/about.html` |
-| お問い合わせ | `contact.html` | お問い合わせフォーム | `/contact.html` |
-| 法的情報 | `legal.html` | サイト利用規約、プライバシーポリシー、免責事項、知的財産権 | `/legal.html` |
+| トップページ | `index.html` | サイト運用と掲載情報、プレスリリースとお知らせを表示 | `/` |
+| 組織概要 | `about.html` | Adlaire Group紹介、事業領域、組織情報、沿革、運用姿勢 | `/about.html` |
+| お問い合わせ | `contact.html` | お問い合わせフォーム、お問い合わせガイド | `/contact.html` |
+| 法的情報 | `legal.html` | サイト利用規約、プライバシーポリシー、免責事項、知的財産権、サイト運用について | `/legal.html` |
 
 ### ページ詳細
 
 #### 1. トップページ (`index.html`)
 - **機能**:
   - リニューアルのお知らせバナー
+  - サイト運用と掲載情報
   - タブ切り替え式のニュースセクション（プレスリリース/メンテナンス）
   - サイドバーの関連リンク
 - **特徴**: CSS onlyのタブシステム（JavaScript不要）
 
 #### 2. 組織概要 (`about.html`)
 - **表示内容**:
+  - Adlaire Group紹介
+  - 事業領域の概要と考え方
   - 組織名称、設立年、所在地
-  - 事業領域（マウンテン・リゾート事業、DX事業）
   - 代表者情報
   - タイムライン形式の沿革（1993年〜2025年）
+  - 運用姿勢
 - **特徴**: 視覚的なタイムラインデザイン
 
 #### 3. お問い合わせ (`contact.html`)
@@ -53,6 +56,7 @@ Adlaire Groupの公式ウェブサイトです。Adlaire-Designの公開面CSS�
   - お問い合わせ内容（必須）
   - プライバシーポリシー同意チェック（必須）
 - **現状**: フォームのUI実装完了（バックエンド機能は開発中）
+- **補足**: お問い合わせ前の確認事項、よくある確認事項、入力内容の目安をお問い合わせガイドとして掲載
 
 #### 4. 法的情報 (`legal.html`)
 - **掲載内容**:
@@ -60,6 +64,7 @@ Adlaire Groupの公式ウェブサイトです。Adlaire-Designの公開面CSS�
   - プライバシーポリシー（5項目）
   - 免責事項（4項目）
   - 知的財産権について（4項目）
+  - サイト運用について（3項目）
   - 最終更新日表示
 - **特徴**: 目次ナビゲーション、ページ内リンク
 
@@ -71,13 +76,13 @@ Adlaire Groupの公式ウェブサイトです。Adlaire-Designの公開面CSS�
 - **CSS3**: Adlaire-Design CSS成果物
 - **JavaScript**: 使用していません（完全なCSSベース実装）
 
-### Adlaire-Design採用方針
+### Adlaire-Design全面採用方針
 
 AGWSは、Adlaire-Designの公開面CSS成果物を採用する対象リポジトリとして扱います。
 
-初回採用の目的は、現行表示を崩さず、Adlaire-Designを公開面デザインの正本として運用できる状態へ移行することです。正式移行では、既存HTML構造を維持したまま、Adlaire-Design CSS成果物を仕様順に読み込みます。
+Adlaire-Design CSSは全面採用済みです。AGWSでは、現行表示を崩さず、Adlaire-Designを公開面デザインの正本として運用します。4ページは既存HTML構造を維持したまま、Adlaire-Design CSS成果物を仕様順に読み込みます。
 
-初回採用で維持するもの:
+全面採用後も維持するもの:
 
 - 静的HTML/CSS構成
 - JavaScript非依存
@@ -86,7 +91,7 @@ AGWSは、Adlaire-Designの公開面CSS成果物を採用する対象リポジ�
 - Node.js/npm依存なし
 - 2カラム構成、パンくず、サイドバー、カード、CSS onlyタブ、タイムライン、法的情報目次
 
-初回採用で行わないもの:
+全面採用で行わないもの:
 
 - `architect.css` と `style.css` の即時削除
 - AGWS本体HTMLの全面置換
@@ -94,27 +99,20 @@ AGWSは、Adlaire-Designの公開面CSS成果物を採用する対象リポジ�
 - JavaScriptによるUI制御
 - コンテンツ本文の再設計
 
-### 正式移行計画
+### 全面採用の確定事項
 
-Docker配信確認で主要ページとAdlaire-Design CSSの配信に問題がないため、AGWSはAdlaire-Design CSS正式移行へ進めます。
+AGWSは、Adlaire-Design CSSを公開面デザインの正本として全面採用しています。
 
-正式移行の順序:
-
-1. Adlaire-Design側の採用方針を確定する。
-2. AGWS側の採用方針を確定する。
-3. AGWS側のAdlaire-Design CSS正式移行PRを確定する。
-4. 移行後に `sh Tools/check/check-agws.sh` を実行する。
-5. Docker配信で `/`、`/about.html`、`/contact.html`、`/legal.html`、Adlaire-Design CSSのHTTP 200を確認する。
-6. 主要4ページの表示を確認する。
-
-正式移行で確定するもの:
+全面採用で確定するもの:
 
 - 4ページはAdlaire-Design CSS成果物を仕様順に読み込む。
 - HTML本文構造は維持する。
 - `adlaire-design/` 配下のCSSはAdlaire-Design正本から取り込む配布コピーとして扱う。
 - AGWS既存HTML向け互換層を維持する。
+- `architect.css` と `style.css` は直接読み込まず、ロールバック用の既存CSSとして維持する。
+- `sh Tools/check/check-agws.sh` で、読み込み順、旧CSS非読み込み、正本CSSとの一致、全面採用方針を検査する。
 
-正式移行後も `architect.css` と `style.css` はロールバック用の既存CSSとして当面維持します。削除、統合、リネーム、minify、読み込み数削減は、正式移行とは別の後続PRで扱います。
+`architect.css` と `style.css` の削除、統合、リネーム、minify、読み込み数削減は、全面採用とは別の後続PRで扱います。
 
 ## コマンド
 
@@ -147,8 +145,8 @@ adlaire-group-website/
 - `.card` / `.card-body`: カード
 - `.alert-*`: アラート
 
-#### カスタムスタイル
-- `.site-header` / `.site-header.scrolled`: ヘッダー
+#### AGWS公開面スタイル
+- `.site-header`: ヘッダー
 - `.site-nav` / `.nav-button`: ナビゲーション
 - `.tab-container` / `.tab-label`: タブシステム
 - `.timeline` / `.timeline-item`: タイムライン
@@ -295,7 +293,9 @@ python -m http.server 8000
 - **2025.11.30**: 法的情報ページの完全実装（4セクション）
 - **2025.11.30**: インラインスタイル外部化、コードクリーンアップ
 - **2026.08.21**: 静的HTML/CSS中心の構成を維持し、追加開発は個別承認後に確定する方針へ整理
-- **2026.08.21**: Adlaire-Design CSS正式移行として、4ページのCSS読み込みをAdlaire-Design成果物へ切り替え
+- **2026.08.21**: Adlaire-Design CSSを全面採用し、4ページのCSS読み込みをAdlaire-Design成果物へ切り替え
+- **2026.08.21**: トップページ、組織概要、お問い合わせページのコンテンツを追加
+- **2026.08.21**: 公開中情報、リニューアル整備項目、事業領域説明、よくある確認事項を追加
 - **2015.09**: Adlaire Group設立
 
 ### 今後の開発方針
@@ -325,7 +325,7 @@ python -m http.server 8000
 
 ### Adlaire-Design CSSについて
 
-Adlaire-Designで管理する公開面CSS成果物です。AGWS現行HTMLを維持したまま読み込めるよう、Tokens、UI、AGWS互換層に分けています。
+Adlaire-Designで管理する公開面CSS成果物です。AGWSでは全面採用済みであり、現行HTMLを維持したまま読み込めるよう、Tokens、UI、AGWS互換層に分けています。
 
 - CSS変数による色・効果管理
 - レスポンシブグリッドシステム
@@ -367,14 +367,13 @@ Adlaire-Designで管理する公開面CSS成果物です。AGWS現行HTMLを維�
 - コードクリーンアップ完了
 
 ### ファイル統計
-- 総ファイル数: 8ファイル
-- 総サイズ: 約119 KB
+- 総ファイル数: 24ファイル
 - HTMLページ: 4ページ
-- CSSファイル: 2ファイル
+- CSSファイル: 16ファイル（Adlaire-Design成果物14ファイル、ロールバック用既存CSS 2ファイル）
 
 ### 技術スタック
 - HTML5（セマンティックマークアップ）
-- CSS3（Architect CSS + カスタムスタイル）
+- CSS3（Adlaire-Design CSS成果物）
 - JavaScript: 使用なし
 
 ### ブラウザ対応
