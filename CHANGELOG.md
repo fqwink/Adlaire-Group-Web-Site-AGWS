@@ -8,6 +8,10 @@ Adlaire Group 組織サイトの全バージョンの変更履歴をまとめた
 
 ### 2026-08-21
 
+- `README.md` にAdlaire-Design採用方針を追加した。
+- 初回採用では現行表示を崩さず、`architect.css` と `style.css` の読み込みを維持する方針を明記した。
+- CSS切替、HTML全面置換、他リポジトリへの統合、JavaScriptによるUI制御は初回採用対象外として整理した。
+- `Tools/check/check-agws.sh` に、READMEがAdlaire-Design採用方針を記録していることの検査を追加した。
 - `AGENTS.md` を追加し、AGWSの作業開始時確認、リポジトリ構成、基本方針を明文化した。
 - AGWS専用の検査シェル `Tools/check/check-agws.sh` を追加した。
 - `README.md` に検査コマンドを追加した。

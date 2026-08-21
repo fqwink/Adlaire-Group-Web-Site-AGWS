@@ -45,6 +45,11 @@ if ! grep -F 'Architect CSS' "$AGWS_ROOT/README.md" >/dev/null 2>&1; then
   exit 1
 fi
 
+if ! grep -F 'Adlaire-Design採用方針' "$AGWS_ROOT/README.md" >/dev/null 2>&1; then
+  echo "AGWS README must document the Adlaire-Design adoption policy." >&2
+  exit 1
+fi
+
 for page in index.html about.html contact.html legal.html; do
   if ! grep -F '<link rel="stylesheet" href="architect.css">' "$AGWS_ROOT/$page" >/dev/null 2>&1; then
     echo "AGWS page must load architect.css: $page" >&2

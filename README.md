@@ -71,6 +71,29 @@ Adlaire Groupの公式ウェブサイトです。Architect CSSフレームワー
 - **CSS3**: Architect CSS + カスタムスタイル
 - **JavaScript**: 使用していません（完全なCSSベース実装）
 
+### Adlaire-Design採用方針
+
+AGWSは、Adlaire-Designの公開面CSS成果物を採用する対象リポジトリとして扱います。
+
+初回採用の目的は、現行表示を崩さず、Adlaire-Designを公開面デザインの正本として運用できる状態へ移行することです。現時点では、`architect.css` と `style.css` の読み込みを維持し、CSS切替やHTML全面置換は別承認の実装PRで扱います。
+
+初回採用で維持するもの:
+
+- 静的HTML/CSS構成
+- JavaScript非依存
+- 多言語化なし
+- JSONデータ管理なし
+- Node.js/npm依存なし
+- 2カラム構成、パンくず、サイドバー、カード、CSS onlyタブ、タイムライン、法的情報目次
+
+初回採用で行わないもの:
+
+- `architect.css` と `style.css` の即時削除
+- AGWS本体HTMLの全面置換
+- 他リポジトリへの統合
+- JavaScriptによるUI制御
+- コンテンツ本文の再設計
+
 ## コマンド
 
 ```sh
