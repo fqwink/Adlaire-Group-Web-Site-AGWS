@@ -84,6 +84,11 @@ if ! grep -F '正式移行計画' "$AGWS_ROOT/README.md" >/dev/null 2>&1; then
   exit 1
 fi
 
+if ! grep -F 'Adlaire-Design CSS正式移行' "$AGWS_ROOT/AGENTS.md" >/dev/null 2>&1; then
+  echo "AGWS AGENTS.md must document the Adlaire-Design CSS formal migration policy." >&2
+  exit 1
+fi
+
 cat >"$TMP_DIR/expected-css-order" <<'EOF'
 adlaire-design/Tokens/colors.css
 adlaire-design/Tokens/surface.css
@@ -113,12 +118,12 @@ for page in index.html about.html contact.html legal.html; do
   fi
 
   if grep -F '<link rel="stylesheet" href="architect.css">' "$AGWS_ROOT/$page" >/dev/null 2>&1; then
-    echo "AGWS adoption candidate pages must not load legacy architect.css directly: $page" >&2
+    echo "AGWS formal migration pages must not load legacy architect.css directly: $page" >&2
     exit 1
   fi
 
   if grep -F '<link rel="stylesheet" href="style.css">' "$AGWS_ROOT/$page" >/dev/null 2>&1; then
-    echo "AGWS adoption candidate pages must not load legacy style.css directly: $page" >&2
+    echo "AGWS formal migration pages must not load legacy style.css directly: $page" >&2
     exit 1
   fi
 

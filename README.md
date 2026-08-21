@@ -75,7 +75,7 @@ Adlaire Groupの公式ウェブサイトです。Adlaire-Designの公開面CSS�
 
 AGWSは、Adlaire-Designの公開面CSS成果物を採用する対象リポジトリとして扱います。
 
-初回採用の目的は、現行表示を崩さず、Adlaire-Designを公開面デザインの正本として運用できる状態へ移行することです。この適用候補では、既存HTML構造を維持したまま、Adlaire-Design CSS成果物を仕様順に読み込みます。
+初回採用の目的は、現行表示を崩さず、Adlaire-Designを公開面デザインの正本として運用できる状態へ移行することです。正式移行では、既存HTML構造を維持したまま、Adlaire-Design CSS成果物を仕様順に読み込みます。
 
 初回採用で維持するもの:
 
@@ -96,13 +96,13 @@ AGWSは、Adlaire-Designの公開面CSS成果物を採用する対象リポジ�
 
 ### 正式移行計画
 
-Docker配信確認で主要ページとAdlaire-Design CSSの配信に問題がないため、AGWSはAdlaire-Design CSS採用候補から正式移行へ進めます。
+Docker配信確認で主要ページとAdlaire-Design CSSの配信に問題がないため、AGWSはAdlaire-Design CSS正式移行へ進めます。
 
 正式移行の順序:
 
 1. Adlaire-Design側の採用方針を確定する。
 2. AGWS側の採用方針を確定する。
-3. AGWS側のAdlaire-Design CSS適用候補を確定する。
+3. AGWS側のAdlaire-Design CSS正式移行PRを確定する。
 4. 移行後に `sh Tools/check/check-agws.sh` を実行する。
 5. Docker配信で `/`、`/about.html`、`/contact.html`、`/legal.html`、Adlaire-Design CSSのHTTP 200を確認する。
 6. 主要4ページの表示を確認する。
