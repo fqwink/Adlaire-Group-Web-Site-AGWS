@@ -71,6 +71,12 @@ Adlaire Groupの公式ウェブサイトです。Architect CSSフレームワー
 - **CSS3**: Architect CSS + カスタムスタイル
 - **JavaScript**: 使用していません（完全なCSSベース実装）
 
+## コマンド
+
+```sh
+sh Tools/check/check-agws.sh
+```
+
 ### ファイル構成
 
 ```

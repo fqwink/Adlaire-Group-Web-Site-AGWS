@@ -4,6 +4,15 @@ Adlaire Group 組織サイトの全バージョンの変更履歴をまとめた
 
 ---
 
+## Repository Maintenance
+
+### 2026-08-21
+
+- `AGENTS.md` を追加し、AGWSの作業開始時確認、リポジトリ構成、基本方針を明文化した。
+- AGWS専用の検査シェル `Tools/check/check-agws.sh` を追加した。
+- `README.md` に検査コマンドを追加した。
+- remote設定をAdlaire-Designと同様に、`origin` をSSH、`backup` をHTTPSとして扱う方針へ揃えた。
+
 ## Version 0.7 (開発予定)
 
 ### 🎯 主要開発: 多言語化とJSONデータ化
