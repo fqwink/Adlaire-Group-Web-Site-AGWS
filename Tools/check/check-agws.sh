@@ -79,6 +79,11 @@ if ! grep -F 'Adlaire-Design採用方針' "$AGWS_ROOT/README.md" >/dev/null 2>&1
   exit 1
 fi
 
+if ! grep -F '正式移行計画' "$AGWS_ROOT/README.md" >/dev/null 2>&1; then
+  echo "AGWS README must document the formal migration plan." >&2
+  exit 1
+fi
+
 cat >"$TMP_DIR/expected-css-order" <<'EOF'
 adlaire-design/Tokens/colors.css
 adlaire-design/Tokens/surface.css

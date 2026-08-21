@@ -8,6 +8,9 @@ Adlaire Group 組織サイトの全バージョンの変更履歴をまとめた
 
 ### 2026-08-21
 
+- Docker配信確認で問題がないため、Adlaire-Design CSS採用候補から正式移行へ進める計画を `README.md` に追加した。
+- 正式移行の順序、確定するもの、旧CSSの当面維持、後続PRへ分離する対象を整理した。
+- `Tools/check/check-agws.sh` に、READMEが正式移行計画を記録していることの検査を追加した。
 - Adlaire-Design CSS適用候補として、`adlaire-design/` 配下にAdlaire-DesignのTokens/UI CSS成果物を追加した。
 - `index.html`、`about.html`、`contact.html`、`legal.html` のCSS読み込みをAdlaire-Designの仕様順へ切り替えた。
 - `architect.css` と `style.css` は削除せず、ロールバック用の既存CSSとして維持した。
