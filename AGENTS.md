@@ -5,7 +5,7 @@
 - すべての作業開始時に、必ずこの `AGENTS.md` を読むこと。
 - このリポジトリは `Adlaire-Group-Web-Site-AGWS` の開発正本として扱うこと。
 - `adlaire.com` の公開面デザイン・構成の参照元として扱うこと。
-- デザイン方針の上位参照は、`Adlaire-Design/Docs/Brand_Color_Spec` および `Adlaire-Design/Docs/AGWS_Design_Analysis` とする。
+- デザイン方針の上位参照は、`Adlaire-Design/Docs/Master_Spec` および `Adlaire-Design/Docs/AGWS_Design_Analysis` とする。
 - 変更履歴は `CHANGELOG.md`、プロジェクト説明は `README.md` を正本として扱うこと。
 
 ## リポジトリ構成
