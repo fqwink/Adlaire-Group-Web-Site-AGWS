@@ -1,0 +1,37 @@
+/* Adlaire-Design effect tokens */
+:root {
+  --adlaire-radius-sm: 4px;
+  --adlaire-radius-md: 6px;
+  --adlaire-radius-lg: 8px;
+  --adlaire-radius-round: 50%;
+  --adlaire-shadow-card: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --adlaire-shadow-card-hover: 0 4px 16px rgba(0, 0, 0, 0.15);
+  --adlaire-shadow-button: 0 2px 8px rgba(0, 0, 0, 0.15);
+  --adlaire-shadow-nav: 0 4px 8px rgba(0, 0, 0, 0.2);
+  --adlaire-shadow-header: 0 2px 10px rgba(0, 0, 0, 0.1);
+  --adlaire-shadow-title: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  --adlaire-shadow-focus-color: rgba(0, 102, 204, 0.1);
+  --adlaire-shadow-focus-ring: 0 0 0 3px rgba(0, 102, 204, 0.1);
+  --adlaire-shadow-marker-ring: 0 0 0 2px var(--adlaire-surface-accent);
+  --adlaire-shadow-tab-active: 0 -2px 4px rgba(0, 102, 204, 0.1);
+  --adlaire-shadow-blue-soft: 0 2px 8px rgba(0, 102, 204, 0.15);
+  --adlaire-shadow-blue: 0 2px 8px rgba(0, 102, 204, 0.3);
+  --adlaire-shadow-blue-nav-hover: 0 4px 8px rgba(0, 102, 204, 0.3);
+  --adlaire-shadow-blue-sticky: 0 4px 12px rgba(0, 102, 204, 0.15);
+  --adlaire-shadow-blue-strong: 0 4px 12px rgba(0, 102, 204, 0.4);
+  --adlaire-shadow-blue-hover: 0 4px 12px rgba(0, 102, 204, 0.5);
+  --adlaire-shadow-blue-intense: 0 6px 20px rgba(0, 102, 204, 0.6);
+  --adlaire-overlay-white-20: rgba(255, 255, 255, 0.2);
+  --adlaire-overlay-white-30: rgba(255, 255, 255, 0.3);
+  --adlaire-overlay-white-40: rgba(255, 255, 255, 0.4);
+  --adlaire-overlay-white-50: rgba(255, 255, 255, 0.5);
+  --adlaire-overlay-white-80: rgba(255, 255, 255, 0.8);
+  --adlaire-overlay-white-90: rgba(255, 255, 255, 0.9);
+  --adlaire-transition-fast: 0.15s ease-in-out;
+  --adlaire-transition-button: 0.2s ease-in-out;
+  --adlaire-transition-base: 0.3s ease;
+  --adlaire-animation-fade-in: fadeIn 0.3s ease-in;
+  --adlaire-z-timeline-marker: 1;
+  --adlaire-z-sticky: 100;
+  --adlaire-z-page-top: 1000;
+}

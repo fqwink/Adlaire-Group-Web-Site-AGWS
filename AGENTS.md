@@ -14,6 +14,7 @@
 - `about.html`: 組織概要ページ
 - `contact.html`: お問い合わせページ
 - `legal.html`: 法的情報ページ
+- `adlaire-design/`: Adlaire-Design CSS成果物
 - `architect.css`: Architect CSSフレームワーク
 - `style.css`: サイト固有スタイル
 - `Tools/check/`: AGWS専用の検査シェル
@@ -24,7 +25,8 @@
 
 - 現行の静的HTML構成を尊重すること。
 - Ver.0.6系では、JavaScriptに依存しないCSSベース実装を維持すること。
-- `architect.css` はフレームワーク層、`style.css` はサイト固有層として扱うこと。
+- Adlaire-Design CSS適用候補では、`adlaire-design/` 配下のCSS成果物を仕様順に読み込むこと。
+- `architect.css` と `style.css` は、当面はロールバック用の既存CSSとして維持し、削除しないこと。
 - `index.html`、`about.html`、`contact.html`、`legal.html` の共通構成を不用意に崩さないこと。
 - 2カラム構成、レスポンシブ対応、パンくず、サイドバー、カード、CSS onlyタブ、タイムラインを公開面デザインの重要要素として扱うこと。
 - Node.js/npm依存物(`package.json`、`package-lock.json`、`node_modules`)を追加しないこと。

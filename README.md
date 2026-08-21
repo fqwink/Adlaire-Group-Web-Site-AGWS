@@ -2,7 +2,7 @@
 
 ## プロジェクト概要
 
-Adlaire Groupの公式ウェブサイトです。Architect CSSフレームワークを基調としたモダンでクリーンなデザインを採用し、企業情報を効果的に発信します。
+Adlaire Groupの公式ウェブサイトです。Adlaire-Designの公開面CSS成果物を基調としたモダンでクリーンなデザインを採用し、企業情報を効果的に発信します。
 
 **現在のバージョン**: Ver.0.6 ✅ **開発完了**  
 **今後の追加開発**: 未定（個別承認後に確定）
@@ -10,7 +10,7 @@ Adlaire Groupの公式ウェブサイトです。Architect CSSフレームワー
 ## 主な特徴
 
 - 📱 **レスポンシブデザイン**: スマートフォン、タブレット、デスクトップに完全対応
-- 🎨 **Architect CSS**: 自社開発のArchitect CSSフレームワークを使用
+- 🎨 **Adlaire-Design CSS**: Adlaire-Designの公開面CSS成果物を使用
 - ⚡ **高速表示**: 軽量な静的HTMLによる高速なページロード
 - 🎯 **シンプル設計**: JavaScript不要のクリーンな実装
 - ♿ **アクセシビリティ**: セマンティックHTMLとARIAラベルによる高いアクセシビリティ
@@ -68,14 +68,14 @@ Adlaire Groupの公式ウェブサイトです。Architect CSSフレームワー
 ### 使用技術
 
 - **HTML5**: セマンティックマークアップ
-- **CSS3**: Architect CSS + カスタムスタイル
+- **CSS3**: Adlaire-Design CSS成果物
 - **JavaScript**: 使用していません（完全なCSSベース実装）
 
 ### Adlaire-Design採用方針
 
 AGWSは、Adlaire-Designの公開面CSS成果物を採用する対象リポジトリとして扱います。
 
-初回採用の目的は、現行表示を崩さず、Adlaire-Designを公開面デザインの正本として運用できる状態へ移行することです。現時点では、`architect.css` と `style.css` の読み込みを維持し、CSS切替やHTML全面置換は別承認の実装PRで扱います。
+初回採用の目的は、現行表示を崩さず、Adlaire-Designを公開面デザインの正本として運用できる状態へ移行することです。この適用候補では、既存HTML構造を維持したまま、Adlaire-Design CSS成果物を仕様順に読み込みます。
 
 初回採用で維持するもの:
 
@@ -108,6 +108,7 @@ adlaire-group-website/
 ├── about.html          # 組織概要ページ
 ├── contact.html        # お問い合わせページ
 ├── legal.html          # 法的情報ページ
+├── adlaire-design/     # Adlaire-Design CSS成果物
 ├── architect.css       # Architect CSSフレームワーク
 ├── style.css           # カスタムスタイル
 ├── README.md           # このファイル
@@ -116,7 +117,7 @@ adlaire-group-website/
 
 ### 主要なCSSクラス
 
-#### Architect CSSフレームワーク
+#### Adlaire-Design互換CSS
 - `.container` / `.container-fluid`: コンテナ
 - `.row` / `.col-*`: グリッドシステム
 - `.btn` / `.btn-primary`: ボタン
@@ -241,9 +242,6 @@ adlaire-group-website/
 
 # Pythonの場合
 python -m http.server 8000
-
-# Node.jsの場合
-npx http-server
 ```
 
 ## デプロイ方法
@@ -275,6 +273,7 @@ npx http-server
 - **2025.11.30**: 法的情報ページの完全実装（4セクション）
 - **2025.11.30**: インラインスタイル外部化、コードクリーンアップ
 - **2026.08.21**: 静的HTML/CSS中心の構成を維持し、追加開発は個別承認後に確定する方針へ整理
+- **2026.08.21**: Adlaire-Design CSS適用候補として、4ページのCSS読み込みをAdlaire-Design成果物へ切り替え
 - **2015.09**: Adlaire Group設立
 
 ### 今後の開発方針
@@ -302,21 +301,24 @@ npx http-server
 
 ## 開発に関するメモ
 
-### Architect CSSフレームワークについて
+### Adlaire-Design CSSについて
 
-Adlaire Group DX事業セグメントが開発した独自のCSSフレームワークです。Bootstrap風のクラス設計で、以下の特徴があります：
+Adlaire-Designで管理する公開面CSS成果物です。AGWS現行HTMLを維持したまま読み込めるよう、Tokens、UI、AGWS互換層に分けています。
 
-- 軽量（約8KB）
+- CSS変数による色・効果管理
 - レスポンシブグリッドシステム
 - フォームコントロール
 - ボタンスタイル
 - ユーティリティクラス
+- AGWS既存HTML向け互換層
+
+`architect.css` と `style.css` は、ロールバック用の既存CSSとして当面維持します。
 
 ### カスタマイズ方法
 
-1. **色の変更**: `style.css`の`:root`変数を編集
-2. **レイアウト調整**: `.container`の`max-width`を変更
-3. **フォント変更**: `body`の`font-family`を変更
+1. **色の変更**: `adlaire-design/Tokens/` 配下のCSS変数をAdlaire-Design正本に合わせて更新
+2. **レイアウト調整**: `adlaire-design/UI/layout.css` と `adlaire-design/UI/grid.css` をAdlaire-Design正本に合わせて更新
+3. **AGWS既存HTML互換**: `adlaire-design/UI/compat-agws.css` をAdlaire-Design正本に合わせて更新
 
 ### コード規約
 
