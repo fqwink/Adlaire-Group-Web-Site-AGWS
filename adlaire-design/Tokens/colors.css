@@ -1,0 +1,9 @@
+/* Adlaire-Design color tokens */
+:root {
+  --adlaire-color-primary: #00a968;
+  --adlaire-color-secondary: #3498db;
+  --adlaire-color-accent: #40aaef;
+  --adlaire-color-surface: #ecf0f1;
+  --adlaire-color-border: #eceef1;
+  --adlaire-color-support: #58be89;
+}

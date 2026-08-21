@@ -1,0 +1,72 @@
+/* Adlaire-Design color utilities */
+.adlaire-bg-primary {
+  background-color: var(--adlaire-color-primary);
+}
+
+.adlaire-bg-secondary {
+  background-color: var(--adlaire-color-secondary);
+}
+
+.adlaire-bg-accent {
+  background-color: var(--adlaire-color-accent);
+}
+
+.adlaire-bg-surface {
+  background-color: var(--adlaire-color-surface);
+}
+
+.adlaire-bg-border {
+  background-color: var(--adlaire-color-border);
+}
+
+.adlaire-bg-support {
+  background-color: var(--adlaire-color-support);
+}
+
+.adlaire-text-primary {
+  color: var(--adlaire-color-primary);
+}
+
+.adlaire-text-secondary {
+  color: var(--adlaire-color-secondary);
+}
+
+.adlaire-text-accent {
+  color: var(--adlaire-color-accent);
+}
+
+.adlaire-text-surface {
+  color: var(--adlaire-color-surface);
+}
+
+.adlaire-text-border {
+  color: var(--adlaire-color-border);
+}
+
+.adlaire-text-support {
+  color: var(--adlaire-color-support);
+}
+
+.adlaire-border-primary {
+  border-color: var(--adlaire-color-primary);
+}
+
+.adlaire-border-secondary {
+  border-color: var(--adlaire-color-secondary);
+}
+
+.adlaire-border-accent {
+  border-color: var(--adlaire-color-accent);
+}
+
+.adlaire-border-surface {
+  border-color: var(--adlaire-color-surface);
+}
+
+.adlaire-border-border {
+  border-color: var(--adlaire-color-border);
+}
+
+.adlaire-border-support {
+  border-color: var(--adlaire-color-support);
+}

@@ -8,6 +8,20 @@ Adlaire Group 組織サイトの全バージョンの変更履歴をまとめた
 
 ### 2026-08-21
 
+- `AGENTS.md`、`README.md`、`Tools/check/check-agws.sh` の表現を、Adlaire-Design CSS適用候補から正式移行前提へ揃えた。
+- `Tools/check/check-agws.sh` に、AGENTSがAdlaire-Design CSS正式移行方針を記録していることの検査を追加した。
+- Docker配信確認で問題がないため、Adlaire-Design CSS採用候補から正式移行へ進める計画を `README.md` に追加した。
+- 正式移行の順序、確定するもの、旧CSSの当面維持、後続PRへ分離する対象を整理した。
+- `Tools/check/check-agws.sh` に、READMEが正式移行計画を記録していることの検査を追加した。
+- Adlaire-Design CSS適用候補として、`adlaire-design/` 配下にAdlaire-DesignのTokens/UI CSS成果物を追加した。
+- `index.html`、`about.html`、`contact.html`、`legal.html` のCSS読み込みをAdlaire-Designの仕様順へ切り替えた。
+- `architect.css` と `style.css` は削除せず、ロールバック用の既存CSSとして維持した。
+- `AGENTS.md` に `adlaire-design/` と旧CSSのロールバック用維持方針を追記した。
+- `Tools/check/check-agws.sh` に、Adlaire-Design CSS成果物、読み込み順、旧CSSをページから読み込まないことの検査を追加した。
+- `README.md` にAdlaire-Design採用方針を追加した。
+- 前段の採用方針として、現行表示を崩さず、CSS切替は別承認の実装PRで扱う方針を明記した。
+- HTML全面置換、他リポジトリへの統合、JavaScriptによるUI制御は初回採用対象外として整理した。
+- `Tools/check/check-agws.sh` に、READMEがAdlaire-Design採用方針を記録していることの検査を追加した。
 - `AGENTS.md` を追加し、AGWSの作業開始時確認、リポジトリ構成、基本方針を明文化した。
 - AGWS専用の検査シェル `Tools/check/check-agws.sh` を追加した。
 - `README.md` に検査コマンドを追加した。

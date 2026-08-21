@@ -1,0 +1,28 @@
+/* Adlaire-Design status tokens */
+:root {
+  --adlaire-status-secondary: #6c757d;
+  --adlaire-status-secondary-strong: #5a6268;
+  --adlaire-status-success: #28a745;
+  --adlaire-status-danger: #dc3545;
+  --adlaire-status-warning: #ffc107;
+  --adlaire-status-info: #17a2b8;
+  --adlaire-status-dark: #343a40;
+  --adlaire-status-gray-777: #777777;
+  --adlaire-status-gray-999: #999999;
+  --adlaire-status-gray-ccc: #cccccc;
+  --adlaire-status-gray-ddd: #dddddd;
+  --adlaire-status-gray-light: #f8f9fa;
+  --adlaire-status-gray-soft: #f9f9f9;
+  --adlaire-alert-info-text: #0c5460;
+  --adlaire-alert-info-bg: #d1ecf1;
+  --adlaire-alert-info-border: #bee5eb;
+  --adlaire-alert-success-text: #155724;
+  --adlaire-alert-success-bg: #d4edda;
+  --adlaire-alert-success-border: #c3e6cb;
+  --adlaire-alert-warning-text: #856404;
+  --adlaire-alert-warning-bg: #fff3cd;
+  --adlaire-alert-warning-border: #ffeaa7;
+  --adlaire-alert-danger-text: #721c24;
+  --adlaire-alert-danger-bg: #f8d7da;
+  --adlaire-alert-danger-border: #f5c6cb;
+}
